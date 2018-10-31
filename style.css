@@ -1,0 +1,77 @@
+@keyframes bounce {
+  from { transform: translate3d(0, 0, 0);     }
+  to   { transform: translate3d(0, 80px, 0); }
+}
+
+.ball-container {
+  display: flex;
+  justify-content: center;
+  vertical-align: middle;
+  margin: 120px;
+}
+
+.ball {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: lightgreen;
+  
+}
+
+.happy {
+  background-color: lightgreen;
+  animation: bounce 0.75s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+.meh {
+  background-color: orange;
+  animation: bounce 1.5s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;  
+}
+
+.sad {
+  background-color: red;
+  animation: bounce 3s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite; 
+}
+
+
+.hidden {
+  display: none;
+  padding-left: 30px;
+}
+
+.btn {
+  height: 30px;
+  width: 80px;
+  border-radius: 9px;
+  background-color: #70ccca;
+}
+
+body {
+  display: flex;
+  vertical-align: middle;
+}
+
+h1 {
+  font-size: 20px;
+
+}
+
+div#ball-background {
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrkqEuD7mwOJwwrzll0S67f7iA0rwZiJCJ39XZg3A_63iBEfWZ);
+  background-repeat:no-repeat;
+  background-size: cover;
+}
+
+.buttons {
+  padding-left: 30px;
+}
+
+.health {
+  font-size: 20px;
+}
